@@ -1,0 +1,35 @@
+.container {
+  height: calc(100vh - 100px); /* from 100vw - 100px menu height  */
+  background-color: #d1411e;
+  position: relative;
+  overflow: hidden; /*nicher  scrolbar hide hoyeche*/
+}
+
+.arrowContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+  height: 20%;
+  margin: auto;
+  cursor: pointer;
+  z-index: 1;
+}
+.wrapper {
+  width: 300vw; /* 100 * 3 = 300vw;  3ta images  */
+  height: 100%;
+  display: flex;
+  transition: all 1.5s ease-in-out;
+}
+.imgContainer {
+  width: 100vw; /* each image 100vw */
+  height: 100%;
+  position: relative;
+}
+
+/* media query */
+@media screen and (max-width: 480px) {
+  .container {
+    height: 50vh;
+  }
+}
